@@ -1,0 +1,31 @@
+//Desafios JavaScript na DIO têm funções "gets" e "print" acessíveis globalmente:
+//- "gets" : lê UMA linha com dado(s) de entrada (inputs) do usuário;
+//- "print": imprime um texto de saída (output), pulando linha.
+
+// Entrada de dados. Lembre-se: O parseInt(()) é importante para a conversão dos valores de entrada(String) para um valor numérico(int).
+
+//Aqui temos uma demonstração de array com valores já predefinidos:
+
+//Aqui temos uma forma de loop para percorrer cada sala da masmorra:
+
+//Utilizamos o .includes() para verificar se um número está presente nos arrays:
+
+//TODO: Agora implemente uma condição necessária para verificar e exibir se há tesouro na sala e se há montro na sala:
+
+
+const totalSalas = parseInt(gets());
+
+const salasComTesouro = [2, 4, 7];
+const salasComMonstro = [3, 6, 8];
+
+for (let sala = 1; sala <= totalSalas; sala++) {
+
+    const temTesouro = salasComTesouro.includes(sala);
+    const temMonstro = salasComMonstro.includes(sala);
+
+    if (temTesouro) {
+        print("Tesouro na sala " + sala + "!");
+    } else if (temMonstro) {
+        print("Monstro na sala " + sala + "!");
+    }
+}
