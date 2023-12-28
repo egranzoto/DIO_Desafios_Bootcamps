@@ -1,0 +1,30 @@
+//Desafios JavaScript na DIO têm funções "gets" e "print" acessíveis globalmente:
+//- "gets" : lê UMA linha com dado(s) de entrada (inputs) do usuário;
+//- "print": imprime um texto de saída (output), pulando linha.
+
+// Definição da classe ItemMagico
+
+//TODO: Crie adequadamente um construtor que receba todos os atributos referente ao item mágico:
+
+// Solicita ao usuário para digitar o tipo do item mágico, o dano no item e a resistência do item
+
+//TODO: Crie o de um objeto ItemMagico personalizado com base no tipo escolhido
+
+// TODO: Imprima os atributos do item personalizado
+
+// Calcula e imprime o dano causado pelo item personalizado em um combate simulado
+
+
+const tipoItem = gets();
+const dano = parseInt(gets());
+const resistencia = parseInt(gets());
+
+print("Tipo:", tipoItem);
+print("Dano:", dano);
+print("Resistencia:", resistencia);
+
+function calcularDanoCombate(dano) {
+  return dano;
+}
+
+print("Dano em combate:", calcularDanoCombate(dano));
